@@ -42,3 +42,20 @@ maxMin(numbers3);
 // The max number is 37 and the min number is 37
 console.log('-----------------------------------');
 console.log('-----------------------------------');
+
+let voteCount1 = { upVotes: 37, downVotes: 42};
+console.log(voteCount1);
+// { upVotes: 37, downVotes: 44}
+let voteCount2 = { upVotes: 24, downVotes: 26};
+
+let voteCount3 = { upVotes: 9, downVotes: 5};
+
+let voteCounter = (voteParams) => console.log(voteParams.upVotes - voteParams.downVotes);
+
+voteCounter(voteCount1);
+// -5
+voteCounter(voteCount2);
+// -2
+voteCounter(voteCount3);
+// 4
+
