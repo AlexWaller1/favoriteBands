@@ -40,3 +40,5 @@ maxMin(numbers2);
 maxMin(numbers3);
 // Array only has 1 number.
 // The max number is 37 and the min number is 37
+console.log('-----------------------------------');
+console.log('-----------------------------------');

@@ -9,5 +9,20 @@ if (nums1[0] == 1){
          max = Math.max(0, nums1[hh1]);
     }
     console.log(max);
-    // 2 so we don't want to use ,ath.max
+    // 2 so we don't want to use math.max
 }
+
+getVoteCount1 = { upVotes: 37, downVotes: 44 };
+
+getVoteCount2 = { upVotes: 104, downVotes: 34};
+
+console.log(getVoteCount1.upVotes);
+// 37
+console.log(getVoteCount1.downVotes);
+// 44
+voteDifference1 = getVoteCount1.upVotes - getVoteCount1.downVotes;
+console.log(voteDifference1);
+// -7
+voteDifference2 = getVoteCount2.upVotes - getVoteCount2.downVotes;
+console.log(voteDifference2);
+// 70
