@@ -59,3 +59,38 @@ voteCounter(voteCount2);
 voteCounter(voteCount3);
 // 4
 
+console.log('------------------------------------');
+console.log('------------------------------------');
+
+function fizzBuzzCount(num1 = 3, num2 = 9){
+    for (let i = num1; i <= num2; i++){
+        if (i % 5 == 0 && i % 3 == 0 ){
+            console.log('FizzBuzz');
+        }
+        else if (i % 5 == 0){
+            console.log('Fizz');
+        }
+        else if (i % 3 == 0){
+            console.log('Buzz');
+        }
+        else
+            console.log(i);
+    }
+}
+
+fizzBuzzCount();
+// Buzz
+// 4
+// Fizz
+// Buzz
+// 7
+// 8
+// Buzz
+console.log('----------------------------------');
+fizzBuzzCount(15, 20);
+// FizzBuzz
+// 16
+// 17
+// Buzz
+// 19
+// Fizz
