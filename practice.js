@@ -69,3 +69,37 @@ console.log(Math.random() * 10);
 // and even it is 9.8 or 9.7, etc. 
 // It will always round down to 9, so you'll
 // always be within scope
+console.log(Math.floor(9.76));
+// 9
+console.log(Math.random() * 37);
+// 16.17
+// 11.03
+// 35.62
+let officeMax = ['ballpoint pens', 'stapler', 'pen holder',
+'pencils', 'pencil sharpener', 'erasers', 'printer', 'usb drive',
+'blank CDs', 'file folder', 'briefcase', 'backpack', 'printer',
+'scanner', 'calculator'];
+
+console.log(officeMax);
+/* 
+
+['ballpoint pens', 'stapler', 'pen holder', 'pencils', 
+'pencil sharpener', 'erasers', 'printer', 'usb drive', 
+'blank CDs', 'file folder', 'briefcase', 'backpack', 
+'printer', 'scanner', 'calculator']
+
+*/
+
+console.log(officeMax.length);
+// 15
+
+if (officeMax[2] === 'pen holder'){
+    let office1 = officeMax.filter(function(office2){
+        return office2 == 'scanner';
+    }).map(function(office3){
+        return office3;
+    })
+    console.log(office1);
+}
+// ['scanner']
+

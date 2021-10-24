@@ -104,3 +104,5 @@ getRandom(numbers1);
 getRandom(numbers2);
 // will print random numbers2 element every time
 // console is loaded
+console.log('------------------------------------');
+console.log('------------------------------------');
