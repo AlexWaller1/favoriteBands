@@ -103,3 +103,63 @@ if (officeMax[2] === 'pen holder'){
 }
 // ['scanner']
 
+let officeChair = 'Office Chair';
+console.log(officeChair);
+officeChair = officeChair.split('');
+console.log(officeChair);
+// ['O', 'f', 'f', 'i', 'c', 'e', ' ', 'C', 'h', 'a', 'i', 'r']
+officeChair = officeChair.reverse();
+console.log(officeChair);
+// ['r', 'i', 'a', 'h', 'C', ' ', 'e', 'c', 'i', 'f', 'f', 'O']
+officeChair = officeChair.join('');
+console.log(officeChair);
+// riahC eciffO
+let testInt = '37'
+parseInt(testInt);
+console.log(testInt);
+console.log(parseInt(testInt));
+// 37
+console.log(Math.random() * 5);
+// 4.61
+// 4.82
+// 2.27
+// 1.13
+
+function reverseStringsArray(array3){
+    for (let hh1 = 0; hh1 < array3.length; hh1++){
+        let rString = array3[hh1];
+        // all elements of given array parameter
+        rString = rString.split('');
+        rstring = rString.reverse();
+        rString = rString.join('');
+        console.log(rString);
+    }
+}
+
+reverseStringsArray(officeMax);
+/*
+
+ snep tniopllab
+ relpats
+ redloh nep
+ slicnep
+ reneprahs licnep
+ sresare
+ retnirp
+ evird bsu
+ sDC knalb
+ redlof elif
+ esacfeirb
+ kcapkcab
+ retnirp
+ rennacs
+ rotaluclac
+
+
+*/
+
+console.log(officeMax);
+console.log(officeMax[0]);
+// ballpoint pens
+console.log(officeMax[6]);
+
