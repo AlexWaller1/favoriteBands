@@ -3,6 +3,9 @@ console.log('Hi, Bodhi!!!');
 // Hi, Bodhi!!!
 let nums1 = [1, 3, 5, 2];
 
+let dachshunds = ['Beezer', 'Chipper', 'Bodhi',
+ 'Jake', 'Star'];
+
 if (nums1[0] == 1){
     let max = 0;
     for (let hh1 = 0; hh1 < nums1.length; hh1++){
@@ -26,3 +29,18 @@ console.log(voteDifference1);
 voteDifference2 = getVoteCount2.upVotes - getVoteCount2.downVotes;
 console.log(voteDifference2);
 // 70
+console.log(Math.random());
+// .1387
+console.log(Math.random());
+
+// console.log(nums1.random());
+// can't use random() method on this array
+
+function getRandom(array2) {
+    return array2[Math.floor((Math.random() * array2.length))];
+}
+
+console.log(getRandom(nums1));
+// generates random number from array
+console.log(getRandom(dachshunds));
+// will generate different dachshund name each time
