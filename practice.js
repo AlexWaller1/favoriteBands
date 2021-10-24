@@ -44,3 +44,28 @@ console.log(getRandom(nums1));
 // generates random number from array
 console.log(getRandom(dachshunds));
 // will generate different dachshund name each time
+
+// the Math.floor() function returns the largest
+// integer less than or equal to a given number.
+console.log(9.65);
+// 9.65
+console.log(Math.floor(9.65));
+// 9
+console.log(12.34);
+// 12.34
+// Math.floor() will always round an integer down
+console.log(Math.random() * 10);
+// Math.random() on its own will return decimal 
+// number less than 1
+// let's say you multiply Math.random() by 9
+// then you will get any decimal number between
+// 0 and 9
+// given that the number always rounds down
+// you do not have to worry about being out of
+// scope for the array.
+// let's say the length of the array is ten
+// so the array indexes are 0 to 9
+// the number generated will always be less than 10
+// and even it is 9.8 or 9.7, etc. 
+// It will always round down to 9, so you'll
+// always be within scope
