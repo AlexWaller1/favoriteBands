@@ -86,7 +86,7 @@ fizzBuzzCount();
 // 7
 // 8
 // Buzz
-console.log('----------------------------------');
+
 fizzBuzzCount(15, 20);
 // FizzBuzz
 // 16
@@ -94,3 +94,13 @@ fizzBuzzCount(15, 20);
 // Buzz
 // 19
 // Fizz
+console.log('----------------------------------');
+
+let getRandom = (params1) => console.log(params1[Math.floor(Math.random() * params1.length)]);
+
+getRandom(numbers1);
+// will print random numbers1 element every time 
+// console is loaded
+getRandom(numbers2);
+// will print random numbers2 element every time
+// console is loaded
