@@ -353,6 +353,18 @@ if (robots[1] == 'Warren-21'){
 
 }
 
+if (robots[2] == 'Mellon-Tech'){
+    console.log(Math.floor(9.8));
+    // 9
+    console.log(Math.round(9.87));
+    // 10
+    console.log(Math.random() * 37);
+    // 31.23
+    // 36.95
+    // 19.10
+    // 4.34
+}
+
 
 
 
