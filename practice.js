@@ -393,6 +393,96 @@ if (robots[0] == 'Hank-44') {
 console.log(isNaN(null));
 // false
 
+let NaN1 = (object3) => console.log(isNaN(object3));
+
+NaN1();
+// true
+NaN1(undefined);
+// true
+console.log(isNaN('!'));
+// true
+console.log(36);
+// 36
+NaN1(37);
+// false
+console.log('Hello');
+
+let y1 = '';
+console.log(y1);
+// blank row in console
+y1 = 37;
+console.log(y1);
+// 37
+console.log(robots.length);
+// 4
+if (robots.length == 4){
+    let hh1 = 37;
+    let sum = 0;
+    console.log(hh1);
+    // 37 as a number
+    hh1 = hh1.toString();
+    console.log(hh1);
+    // 37 as a string
+    hh1 = hh1.split('');
+    console.log(hh1);
+    // ['3', '7']
+    for (let i = 0; i < hh1.length; i++){
+        let num1 = hh1[i];
+        num1 = parseInt(num1);
+        sum = sum + num1;
+        
+
+    }
+    console.log(sum);
+    // 10
+
+}
+
+
+
+
+
+
+
+
+function armStrongNumber(input2 = 371){
+    let string1 = '';
+    string1 = input2;
+    console.log(input2);
+    string1 = string1.toString();
+    console.log(string1);
+    string2 = string1.split('');
+    console.log(string2);
+    let rString = '';
+    
+    let sum = 0;
+    for (let i = 0; i < string2.length; i++){
+        let newNum = string2[i];
+        
+        newnum = parseInt(newNum);
+        console.log(newNum);
+        sum = sum + Math.pow(newNum, 3);
+        if (sum == input2){
+            rString = `${sum} is an armstrong number.`;
+        }
+        else  
+            rString = `${sum} is not an armstrong number.`;
+
+    }
+    console.log(rString);
+}
+
+armStrongNumber();
+// 371 is an armstrong number
+armStrongNumber(9);
+// 729 is not an arstrong number
+
+console.log(81 * 9);
+// 729
+armStrongNumber(153);
+// 153 is an armstrong number
+
+
 
 
 
