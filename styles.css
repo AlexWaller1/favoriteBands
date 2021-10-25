@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(18, 20, 20);
+  color: rgb(34, 189, 189);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.msg {
+  font-size: larger;
+}
+
+#favorite-bands-list {
+  font-size: xx-large;
+}

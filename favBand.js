@@ -1,6 +1,9 @@
 console.log('Hi, Bodhi!');
 // Hi, Bodhi!
-let favoriteBands = ['smashing pumpkins', 'white stripes',
+
+console.log(window);
+
+let favoriteBands = ['smashing pumpkins', 'the white stripes',
 'red hot chili peppers', 'hum', 'rolling stones'];
 
 let userBands = [];
@@ -46,7 +49,7 @@ function onSubmit(e){
         ${bandInput1.value}`));
         bandList.appendChild(li);
         userBands.push(bandInput1.value);
-        console.log(bandInput1.value);
+        console.log(userBands);
 
         // clear fields
         bandInput1.value = '';

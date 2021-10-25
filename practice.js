@@ -221,5 +221,25 @@ roundNum(decimalNums);
 // 25
 // 96
 // 23
+console.log('-----------------------------------------');
+
+console.log(isNaN(37));
+// false, the function is asking if 37 is not a number
+// since it is, the function will return false
+console.log(isNaN('Office Max'));
+// true
+let isNotNumber = (input1 = 37) => console.log(isNaN(input1));
+
+isNotNumber();
+// false
+isNotNumber('Play Station 5');
+// true
+isNotNumber('Rogue Trooper');
+// true
+isNotNumber(34.76);
+// false
+isNotNumber(.549);
+// false
+
 
 
