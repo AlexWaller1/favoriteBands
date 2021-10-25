@@ -180,11 +180,46 @@ function reverseNumberArray(array4){
 
 let numsArray4 = [34, 56, 98, 76, 54];
 
+let numsArray5 = [90, -12, 20, 210, -20, 37];
+
 reverseNumberArray(numsArray4);
 // 43
 // 65
 // 89
 // 67
 // 45
+console.log('-----------------------------------------');
+
+reverseNumberArray(numsArray5);
+// 9
+// 21
+// 2
+// 12
+// 2
+// 73
+console.log('------------------------------------------');
+
+console.log(Math.floor(37.94));
+// 37
+console.log(Math.round(37.6));
+// 38
+console.log('-----------------------------------------');
+let decimalNums = [34.5, 27.49, 24.87, 96.12, 23.32];
+
+function roundNum(arrayParam){
+    let rNumber = 0;
+    let hh1 = 0;
+    for (; hh1 < arrayParam.length; hh1++){
+        rNumber = arrayParam[hh1];
+        console.log(Math.round(rNumber));
+    }
+}
+
+roundNum(decimalNums);
+// 35
+// 27
+// 25
+// 96
+// 23
 
 
