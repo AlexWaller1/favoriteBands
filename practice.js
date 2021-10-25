@@ -365,6 +365,34 @@ if (robots[2] == 'Mellon-Tech'){
     // 4.34
 }
 
+const randObjects = [37, '!', '#', null, 
+undefined, 65, '96', 9];
+
+
+
+if (robots[0] == 'Hank-44') {
+    let hh1 = 0;
+    for (; hh1 < randObjects.length; hh1++){
+        let rObject = randObjects[hh1];
+        if (isNaN(rObject) === true){
+            console.log(`${rObject} is not a number.`);
+        }
+        else 
+           console.log(`${rObject} is a number.`);
+    }
+    // 37 is a number
+    // ! is not a number
+    // # is not a number
+    // null is a number ???
+    // undefined is not a number
+    // 65 is a number
+    // 96 is a number
+    // 9 is a number
+}
+
+console.log(isNaN(null));
+// false
+
 
 
 
