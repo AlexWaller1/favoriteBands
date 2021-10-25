@@ -325,6 +325,34 @@ if (twoWords[4].lastWord == 'playstation'){
     */
 }
 
+const robots = ['Hank-44', 'Warren-21', 'Mellon-Tech',
+'Eggplant-Head'];
+
+if (robots[2] == 'Mellon-Tech'){
+    let r1 = 0;
+    while (r1 < robots.length){
+        console.log(robots[r1]);
+        r1++;
+    }
+    // Hank-44
+    // Warren-21
+    // Mellon-Tech
+    // Eggplant-Head
+}
+
+if (robots[1] == 'Warren-21'){
+    let r1 = 0;
+    do {
+        console.log(robots[r1]);
+        r1++;
+    }while(r1 < robots.length);
+    // Hank-44
+    // Warren-21
+    // Mellon-Tech
+    // Eggplant-Head
+
+}
+
 
 
 
