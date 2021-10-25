@@ -241,5 +241,22 @@ isNotNumber(34.76);
 isNotNumber(.549);
 // false
 
+let twoWords = [{firstWord: 'pencil', lastWord: 'sharpener'},
+{firstWord: 'dodge', lastWord: 'camry'},
+{firstWord: 'chevy', lastWord: 'camaro'},
+{firstWord: 'volkswagen', lastWord: 'gti'},
+{firstWord: 'sony', lastWord: 'playstation'},
+{firstWord: 'tony', lastWord: 'soprano'}];
+
+console.log(twoWords);
+console.log(twoWords[3].lastWord);
+// gti
+console.log(twoWords[4].lastWord);
+// playstation
+console.log(twoWords[4].lastWord.charAt(0).toUpperCase());
+// P
+console.log(twoWords[4].lastWord.replace('p', 'P'));
+// Playstation
+
 
 
