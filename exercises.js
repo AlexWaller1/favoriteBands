@@ -106,3 +106,38 @@ getRandom(numbers2);
 // console is loaded
 console.log('------------------------------------');
 console.log('------------------------------------');
+
+let twoWords = [{firstWord: 'pencil', lastWord: 'sharpener'},
+{firstWord: 'dodge', lastWord: 'camry'},
+{firstWord: 'chevy', lastWord: 'camaro'},
+{firstWord: 'volkswagen', lastWord: 'gti'},
+{firstWord: 'sony', lastWord: 'playstation'},
+{firstWord: 'tony', lastWord: 'soprano'}];
+
+function camelCase(array54){
+    if (array54.length == 0) console.log('Array is Empty');
+    let hh1 = 0;
+    let a1 = '';
+    let a2 = '';
+    for (; hh1 < array54.length; hh1++){
+        a1 = array54[hh1];
+      //  console.log(a1.firstWord.concat(a1.lastWord));
+        a2 = array54[hh1].firstWord;
+        
+        a1 = a1.lastWord.replace(a1.lastWord.charAt(0),
+        a1.lastWord.charAt(0).toUpperCase());
+       // a1 = a1.firstWord.concat(a1.lastWord);
+        
+        console.log(a2.concat(a1));
+
+        
+    }
+}
+
+camelCase(twoWords);
+// pencilSharpener
+// dodgeCamry
+// chevyCamaro
+// volkswagenGti
+// sonyPlaystation
+// tonySoprano

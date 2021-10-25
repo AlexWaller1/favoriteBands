@@ -246,7 +246,8 @@ let twoWords = [{firstWord: 'pencil', lastWord: 'sharpener'},
 {firstWord: 'chevy', lastWord: 'camaro'},
 {firstWord: 'volkswagen', lastWord: 'gti'},
 {firstWord: 'sony', lastWord: 'playstation'},
-{firstWord: 'tony', lastWord: 'soprano'}];
+{firstWord: 'tony', lastWord: 'soprano'},
+{firstWord: 'sony', lastWord: 'boombox'}];
 
 console.log(twoWords);
 console.log(twoWords[3].lastWord);
@@ -291,6 +292,40 @@ camelCase(twoWords);
 // volkswagenGti
 // sonyPlaystation
 // tonySoprano
+
+console.log(twoWords);
+console.log(twoWords[5]);
+// {firstWord: 'tony', lastWord: 'soprano'}
+
+if (twoWords[5].firstWord == 'tony'){
+    let tony1 = twoWords.filter(function(tony2){
+        return tony2.firstWord == 'tony';
+    }).map(function(tony3){
+        return tony3;
+    }) 
+    console.log(tony1);
+    // [{firstWord: 'tony', lastWord: 'soprano'}]
+}
+
+console.log(twoWords[4]);
+// {firstWord: 'sony', lastWord: 'playstation'}
+
+if (twoWords[4].lastWord == 'playstation'){
+    let sony1 = twoWords.filter(function(sony2){
+        return sony2.firstWord == 'sony';
+    }).map(function(sony3){
+        return sony3;
+    })
+    console.log(sony1);
+    /* 
+    
+    {firstWord: 'sony', lastWord: 'playstation'}
+    {firstWord: 'sony', lastWord: 'boombox'}
+    
+    */
+}
+
+
 
 
 
