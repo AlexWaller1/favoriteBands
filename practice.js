@@ -257,6 +257,41 @@ console.log(twoWords[4].lastWord.charAt(0).toUpperCase());
 // P
 console.log(twoWords[4].lastWord.replace('p', 'P'));
 // Playstation
+console.log(twoWords[4].lastWord.replace(twoWords[4].lastWord.charAt(0), 
+twoWords[4].lastWord.charAt(0).toUpperCase()));
+// Playstation
+let fr1 = 'crash';
+console.log(fr1.concat('Bandicoot'));
+console.log('-------------------------------------------');
+
+function camelCase(array54){
+    if (array54.length == 0) console.log('Array is Empty');
+    let hh1 = 0;
+    let a1 = '';
+    let a2 = '';
+    for (; hh1 < array54.length; hh1++){
+        a1 = array54[hh1];
+      //  console.log(a1.firstWord.concat(a1.lastWord));
+        a2 = array54[hh1].firstWord;
+        
+        a1 = a1.lastWord.replace(a1.lastWord.charAt(0),
+        a1.lastWord.charAt(0).toUpperCase());
+       // a1 = a1.firstWord.concat(a1.lastWord);
+        
+        console.log(a2.concat(a1));
+
+        
+    }
+}
+
+camelCase(twoWords);
+// pencilSharpener
+// dodgeCamry
+// chevyCamaro
+// volkswagenGti
+// sonyPlaystation
+// tonySoprano
+
 
 
 
