@@ -162,4 +162,29 @@ console.log(officeMax);
 console.log(officeMax[0]);
 // ballpoint pens
 console.log(officeMax[6]);
+// printer
+
+function reverseNumberArray(array4){
+    if (array4.length == 0) console.log('Array is Empty.');
+    // edge case
+    let rNumber = 0;
+    for (let hh1 = 0; hh1 < array4.length; hh1++){
+        rNumber = array4[hh1];
+        rNumber = rNumber.toString();
+        rNumber = rNumber.split('');
+        rNumber = rNumber.reverse();
+        rNumber = rNumber.join('');
+        console.log(parseInt(rNumber));
+    }
+}
+
+let numsArray4 = [34, 56, 98, 76, 54];
+
+reverseNumberArray(numsArray4);
+// 43
+// 65
+// 89
+// 67
+// 45
+
 
