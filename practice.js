@@ -536,6 +536,24 @@ addDigits(100);
 // 1
 addDigits(108);
 // 9
+addDigits(222);
+// 6
+
+console.log(Math.PI);
+
+// circumference of a circle is 2 PI r
+
+let circumference = (radius = 5) => console.log(2 * Math.PI * radius);
+
+circumference(6);
+// 37.7
+
+circumference();
+// 31.42
+
+circumference(9);
+// 56.55
+
 
 
 
