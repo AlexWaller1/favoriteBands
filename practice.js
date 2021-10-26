@@ -481,6 +481,38 @@ console.log(81 * 9);
 // 729
 armStrongNumber(153);
 // 153 is an armstrong number
+armStrongNumber(407);
+// 407 is an armstrong number
+
+function isPrimeNumber(num4 = 3) {
+    if (num4 < 2) console.log('Number out of range');
+    if (num4 == 2) console.log('2 is a prime number.');
+    let hh1 = 2;
+    let primeString = '';
+    for (; hh1 < num4; hh1++){
+        if (num4 % hh1 == 0) return primeString = (`${num4} is not a
+        prime number.`);
+        else
+          return primeString = (`${num4} is a prime number.`);
+    }
+    
+}
+
+console.log(isPrimeNumber());
+// 3 is a prime number
+isPrimeNumber(2);
+// 2 is a prime number
+console.log(isPrimeNumber(4));
+// 4 is not a prime number
+console.log(isPrimeNumber(5));
+// 5 is prime number
+console.log(isPrimeNumber(6));
+// 6 is not a prime number
+console.log(isPrimeNumber(7));
+// 7 is prime number
+
+
+
 
 
 
