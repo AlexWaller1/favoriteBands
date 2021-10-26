@@ -595,6 +595,92 @@ console.log(perfectNumber(6));
 // 6 is a perfect number
 console.log(perfectNumber(496));
 // 496 is a perfect number
+console.log(perfectNumber(8128));
+// 8128 is a perfect number
+
+console.log('------------------------------------------');
+console.log('-------------------------------------------');
+
+console.log(robots[2].slice('-'));
+// Mellon-Tech
+console.log(robots[2]);
+// Mellon-Tech
+console.log(robots[2].fontsize());
+// size="undefined"
+
+const nickToons = [{
+    name: 'Dog',
+    homeTown: 'Nearburg',
+    show: 'CatDog'
+}, {
+    name: 'Cat',
+    homeTown: 'Nearburg',
+    show: 'CatDog'
+}, {
+    name: 'Rocko',
+    homeTown: 'O-Town',
+    show: "Rocko's Modern Life"
+}, {
+    name: 'Heffer',
+    homeTown: 'O-Town',
+    show: "Rocko's Modern Life"
+}, {
+    name: 'Filburt',
+    homeTown: 'O-Town',
+    show: "Rocko's Modern Life"
+}, {
+    name: 'Raymundo',
+    homeTown: 'Ocean Shores',
+    show: 'Rocket Power'
+}, {
+    name: 'Otto Rocket',
+    homeTown: 'Ocean Shores',
+    show: 'Rocket Power'
+}, {
+    name: 'Reggie Rocket',
+    homeTown: 'Ocean Shores',
+    show: 'Rocket Power'
+}, {
+    name: 'Spongebob Squarepants',
+    homeTown: 'Bikini Bottom',
+    show: 'Spongebob Squarepants'
+}, {
+    name: 'Patrick Star',
+    homeTown: 'Bikini Bottom',
+    show: 'Spongebob Squarepants'
+}, {
+    name: 'Dagget',
+    homeTown: 'Wayouttatown',
+    show: 'The Angry Beavers'
+}, {
+    name: 'Norbert',
+    homeTown: 'Wayouttatown',
+    show: 'The Angry Beavers'
+}]
+
+console.log(nickToons.indexOf('Norbert'));
+// -1
+console.log(nickToons);
+
+if (nickToons[11].name == 'Norbert'){
+    console.log('Hi, Norbert!');
+    for (let hh1 = 0; hh1 < nickToons.length; hh1++){
+        let name37 = nickToons[hh1].name;
+        console.log(name37);
+        // Dog
+        // Cat
+        // Rocko
+        // Heffer
+        // Filburt
+        // Raymundo
+        // Otto Rocket
+        // Reggie Rocket
+        // Spongebob Squarepants
+        // Patrick Star
+        // Dagget
+        // Norbert
+    }
+}
 
 
 
