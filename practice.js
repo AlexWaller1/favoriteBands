@@ -593,6 +593,8 @@ console.log(perfectNumber(9));
 // 9 is not a perfect number
 console.log(perfectNumber(6));
 // 6 is a perfect number
+console.log(perfectNumber(496));
+// 496 is a perfect number
 
 
 
