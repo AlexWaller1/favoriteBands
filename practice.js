@@ -554,6 +554,47 @@ circumference();
 circumference(9);
 // 56.55
 
+if (robots[3] == 'Eggplant-Head'){
+    let sampleNum = 28;
+    for (let i = 1; i < sampleNum; i++){
+        if (sampleNum % i == 0){
+            console.log(i);
+            // 1
+            // 2
+            // 4
+            // 7
+            // 14
+            
+        }
+    }
+}
+
+function perfectNumber(num7){
+    let sum = 0;
+    let divisibles = 0;
+    for (let i = 1; i < num7; i++){
+        if (num7 % i == 0){
+             
+             sum = sum + i;
+            
+            }
+    }
+    if (sum == num7){
+        return `${num7} is a perfect number.`;
+    }
+    else
+        return `${num7} is not a perfect number.`;
+
+}
+
+console.log(perfectNumber(28));
+// 28 is a perfect number
+console.log(perfectNumber(9));
+// 9 is not a perfect number
+console.log(perfectNumber(6));
+// 6 is a perfect number
+
+
 
 
 
