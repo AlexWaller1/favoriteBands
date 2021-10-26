@@ -485,8 +485,8 @@ armStrongNumber(407);
 // 407 is an armstrong number
 
 function isPrimeNumber(num4 = 3) {
-    if (num4 < 2) console.log('Number out of range');
-    if (num4 == 2) console.log('2 is a prime number.');
+    if (num4 < 2) return ('Number out of range');
+    if (num4 == 2) return ('2 is a prime number.');
     let hh1 = 2;
     let primeString = '';
     for (; hh1 < num4; hh1++){
@@ -510,6 +510,32 @@ console.log(isPrimeNumber(6));
 // 6 is not a prime number
 console.log(isPrimeNumber(7));
 // 7 is prime number
+console.log(isPrimeNumber(1));
+// Number out of range
+console.log(isPrimeNumber(23));
+// 23 is a prime number
+
+function addDigits(num6 = 37) {
+    numString = num6.toString();
+    // number converted to string
+    numString = numString.split('');
+    // string converted to array of its letters
+    let sum = 0;
+    let hh1 = 0;
+    for (; hh1 < numString.length; hh1++){
+        let newNum1 = numString[hh1];
+        newNum1 = parseInt(newNum1);
+        sum = sum + newNum1;
+    }
+    console.log(sum);
+}
+
+addDigits();
+// 10
+addDigits(100);
+// 1
+addDigits(108);
+// 9
 
 
 
