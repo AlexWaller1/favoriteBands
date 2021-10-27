@@ -682,6 +682,55 @@ if (nickToons[11].name == 'Norbert'){
     }
 }
 
+if (nickToons[10].name == 'Dagget'){
+    let toon1 = nickToons.filter(function(toon2){
+        return toon2.homeTown == 'Ocean Shores';
+    }).map(function(toon3){
+        return toon3.name;
+    })
+    console.log(toon1);
+    // ['Raymundo', 'Otto Rocket', 'Reggie Rocket']
+}
+
+console.log(officeMax);
+// ['ballpoint pens', 'stapler', 'pen holder', 'pencils', 'pencil sharpener', 'erasers', 'printer', 'usb drive', 'blank CDs', 'file folder', 'briefcase', 'backpack', 'printer', 'scanner', 'calculator']
+console.log(typeof(officeMax[3]));
+// string
+
+console.log(officeMax[4] == String);
+// false
+
+function wholeNumberSquareRoot(num1 = 4){
+    rString = '';
+    if (num1 % Math.sqrt(num1) == 0){
+        rString = `${num1} has a whole number for a 
+        square root.`;
+    }
+    else {
+        rString = `${num1} does not have a whole number
+        for a square root.`;
+    }
+    console.log(rString);
+}
+
+wholeNumberSquareRoot();
+// 4 has a whole number for a square root
+
+console.log(officeMax[6]);
+// printer
+let squareRootTest = [1, 2, 3, 4, 5, 6];
+
+if (officeMax[6] == 'printer'){
+    let hh1 = 0;
+    let rString = '';
+    for(; hh1 < squareRootTest.length; hh1++){
+        rString = wholeNumberSquareRoot(squareRootTest[hh1]);
+        console.log(rString);
+    }
+}
+
+
+
 
 
 
