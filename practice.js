@@ -729,6 +729,28 @@ if (officeMax[6] == 'printer'){
     }
 }
 
+wholeNumberSquareRoot(81);
+// 81 has a whole number for a square root
+wholeNumberSquareRoot(121);
+// 121 has a whole number for a square root
+function evenOrOddNumber(num1 = 10){
+    rString = '';
+    if (num1 % 2 == 0){
+        rString = `${num1} is an even number.`;
+    }
+    else {
+        rString = `${num1} is an odd number`;
+    }
+    console.log(rString);
+}
+
+evenOrOddNumber();
+// 10 is an even number
+evenOrOddNumber(37);
+// 37 is an odd number
+evenOrOddNumber(9);
+// 9 is an odd number
+
 
 
 
