@@ -750,6 +750,80 @@ evenOrOddNumber(37);
 // 37 is an odd number
 evenOrOddNumber(9);
 // 9 is an odd number
+console.log(officeMax[10]);
+// briefcase
+console.log(officeMax[11]);
+// backpack
+console.log(officeMax[12]);
+// printer
+console.log(officeMax[13]);
+// scanner
+console.log(officeMax[13].indexOf('scan'));
+// 0
+
+const timberTron = ['Timber-Tron', 'Timber::Git', 'Timber_Io'];
+
+function longestCommonPrefix(prefixArr){
+    if (prefixArr.length == 0) console.log('Array is Empty');
+    // edge case in the situation that array has no elements
+    let prefix = prefixArr[0];
+    // first array element will be compared to rest of
+    // elements
+    for (let i = 1; i < prefixArr.length; i++){
+        while (prefixArr[i].indexOf(prefix) != 0){
+            prefix = prefix.substring(0, prefix.length - 1);
+            if (prefix.length == 0) console.log('no common prefix');
+        }
+    }
+    console.log(prefix);
+}
+
+longestCommonPrefix(timberTron);
+// Timber
+
+
+
+
+
+
+
+const suffixWords = ['Wisconsinite', 'Kryptonite', 'prerequisite',
+'infinite', 'indefinite', 'opposite'];
+
+function longestCommonSuffix(suffixArr){
+    if (suffixArr.length == 0) console.log('Array is Empty');
+    let rString = 0;
+
+    suffixArr[0] = suffixArr[0].split('');
+    suffixArr[0] = suffixArr[0].reverse();
+    suffixArr[0] = suffixArr[0].join('');
+    suffix = suffixArr[0];
+    console.log(suffix);
+    for (let i = 1; i < suffixArr.length; i++){
+        suffixArr[i] = suffixArr[i].split('');
+        suffixArr[i] = suffixArr[i].reverse();
+        suffixArr[i] = suffixArr[i].join('');
+        
+        
+        while (suffixArr[i].indexOf(suffix) != 0){
+            suffix = suffix.substring(0, suffix.length - 1);
+            if (suffix.length == 0) console.log('no common suffix')
+        }
+        
+           suffix = suffix.split('');
+           console.log(suffix);
+           suffix = suffix.reverse();
+           suffix = suffix.join('');
+           rString = suffix;
+    }
+    console.log(rString);
+}
+
+longestCommonSuffix(suffixWords);
+
+
+
+
 
 
 
