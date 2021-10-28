@@ -821,13 +821,13 @@ function reverseString(string1){
     string1 = string1.split('');
     string1 = string1.reverse();
     string1 = string1.join('');
-    console.log(string1);
-    console.log(typeof(string1));
+    return string1;
+   
 }
 
-reverseString(robots[2]);
+console.log(reverseString(robots[2]));
 // hceT-nolleM
-reverseString('robot');
+console.log(reverseString('robot'));
 // tobor
 
 let batmanBeyond = 'Batman Beyond';
@@ -846,6 +846,50 @@ console.log(batmanBeyond);
 // dnoyeB namtaB
 console.log(typeof(batmanBeyond));
 // string
+
+function longCommonSuffixTest2(string){
+    string = reverseString(string);
+    return string;
+    
+
+}
+
+console.log(longCommonSuffixTest2('Flash'));
+// hsalF
+
+function longestommonSuffix(jsArray){
+    if (jsArray.length == 0) return 'Array is Empty';
+    prefix = jsArray[0];
+    // will compare rest of array elements to prefix
+    suffix = reverseString(prefix);
+    // have to reverse since we're testing for a suffix
+    for (let i = 1; i < jsArray.length; i++){
+        let jsString = jsArray[i];
+        jsString = reverseString(jsString);
+        while (jsString.indexOf(suffix) != 0){
+            suffix = suffix.substring(0, suffix.length - 1);
+            if (suffix.length == 0) return 'no common suffix';
+        }
+    }
+    suffix = reverseString(suffix);
+    return suffix;
+    
+    
+}
+
+console.log(longestommonSuffix(suffixWords));
+// ite
+console.log(longestommonSuffix(robots));
+// no common suffix
+
+
+
+
+
+
+
+
+
 
 
 
