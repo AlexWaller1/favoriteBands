@@ -881,6 +881,22 @@ console.log(longestommonSuffix(suffixWords));
 // ite
 console.log(longestommonSuffix(robots));
 // no common suffix
+console.log(longestommonSuffix(timberTron));
+// no common suffix
+
+let getRandom2 = (array5) => array5[Math.floor(Math.random() * array5.length )];
+
+console.log(getRandom2(robots));
+// Eggplant-head
+// Warren-21
+// Hank-44
+// Mellon-Tech
+// Eggplant-Head
+// Warren-21
+// Mellon-Tech
+// Hank-44
+// Mellon-Tech
+// Hank-44
 
 
 
