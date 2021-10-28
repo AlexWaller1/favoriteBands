@@ -75,7 +75,7 @@ console.log(Math.random() * 37);
 // 16.17
 // 11.03
 // 35.62
-let officeMax = ['ballpoint pens', 'stapler', 'pen holder',
+const officeMax = ['ballpoint pens', 'stapler', 'pen holder',
 'pencils', 'pencil sharpener', 'erasers', 'printer', 'usb drive',
 'blank CDs', 'file folder', 'briefcase', 'backpack', 'printer',
 'scanner', 'calculator'];
@@ -932,6 +932,56 @@ console.log(robots[2], robots[3]);
 console.log(officeMax[9], officeMax[10], officeMax[11]);
 // file folder briefcase backpack
 
+if (officeMax[11] == 'backpack'){
+    let num7 = 921;
+    num7 = num7.toString()
+    num7 = num7.split('');
+    console.log(num7);
+    console.log(num7.length);
+    // 3
+    for (let i = 0; i < num7.length; i++){
+        for (let j = i + 1; j < num7.length; j++){
+            for (let k = j + 1; k < num7.length; k++){
+                console.log(num7[i], num7[j], num7[k]);
+            }
+        }
+    }
+    
+}
+
+if (robots[2] == 'Mellon-Tech'){
+    let nums2 = [1, 2, 3];
+    for (let i = 0; i < nums2.length; i++){
+        for (let j = i + 1; j < nums2.length; j++){
+            console.log(nums2[i], nums2[j]);
+        }
+    }
+}
+
+let nums44 = [1, 2, 3, 4, 5, 6, 7, 9, 10, 11];
+nums44.pop();
+console.log(nums44);
+nums44.shift()
+console.log(nums44);
+nums44.push(1);
+console.log(nums44);
+nums44 = nums44.join('');
+console.log(nums44);
+// 2345679101
+
+
+if (robots[3] == 'Eggplant-Head'){
+    let nums45 = [1, 2];
+    for (let i = 0; i < nums45.length; i++){
+        let firstNum = nums45[0];
+        nums45.shift(firstNum);
+        nums45.push(firstNum);
+        console.log(nums45);
+        // [2, 1]
+        // [1, 2]
+
+    }
+}
 
 
 
