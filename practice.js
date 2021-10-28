@@ -898,6 +898,42 @@ console.log(getRandom2(robots));
 // Mellon-Tech
 // Hank-44
 
+let cloneNumbers = [1, 1, 2, 2, 3, 3];
+
+let set = new Set(cloneNumbers);
+
+console.log(set);
+// Set(3) {1, 2, 3}
+// got rid of all duplicates in the array
+console.log(set.length);
+console.log(set);
+console.log(set[1]);
+let setArray = [...set];
+console.log(setArray);
+// [1, 2, 3]
+console.log(setArray.length);
+// 3
+
+console.log(officeMax[7]);
+// 'usb drive'
+
+if (officeMax[7] == 'usb drive'){
+    let rString = '';
+    for (i = 0; i < setArray.length; i++){
+        for (j = i + 1; j < setArray.length; j++){
+            console.log(setArray[i], setArray[j]);
+        }
+
+    }
+}
+
+console.log(robots[2], robots[3]);
+// Mellon-Tech Eggplant-Head
+console.log(officeMax[9], officeMax[10], officeMax[11]);
+// file folder briefcase backpack
+
+
+
 
 
 
