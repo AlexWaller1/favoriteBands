@@ -1147,6 +1147,43 @@ if (nickToons[5].homeTown === 'Ocean Shores'){
     // ['Raymundo', 'Otto Rocket', 'Reggie Rocket']
 }
 
+console.log(robots[1].length);
+// 7
+
+console.log(robots[3]);
+// Mellon-Tech
+if (robots[3] == 'Mellon-Tech'){
+    let rString = '';
+    let hh1 = 0;
+    let hank44 = robots[1];
+    let char = '';
+    for (; hh1 < hank44.length; hh1++){
+        char = hank44.charAt(hh1);
+        rString = rString.concat(char);
+
+    }
+    console.log(rString);
+    // Hank-44
+
+}
+
+console.log(robots[0]);
+// Green Egg
+
+if (robots[0] == 'Green Egg'){
+    let rString = '';
+    let hh1 = robots[0].length - 1;
+    let greenEgg = robots[0];
+    let char = '';
+    for (; hh1 >= 0; hh1--){
+        char = greenEgg.charAt(hh1);
+        rString = rString.concat(char);
+    }
+    console.log(rString);
+    // ggE neerG
+}
+
+
 
 
 
