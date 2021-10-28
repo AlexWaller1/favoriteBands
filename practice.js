@@ -1112,6 +1112,42 @@ console.log(Math.random() * 10);
 
 console.log(robots[Math.floor(Math.random() * robots.length)]);
 
+robots.pop(robots[5], robots[6]);
+console.log(robots);
+console.log(robots.indexOf('Bender'));
+// 5
+robots.pop(robots[5]);
+console.log(robots);
+// ['Green Egg', 'Hank-44', 'Warren-21', 'Mellon-Tech', 'Eggplant-Head']
+console.log(robots[0]);
+// Green Egg
+
+if (robots[0] == 'Green Egg'){
+    let robo1 = robots.filter(function(robo2){
+        return robo2 == 'Green Egg';
+    }).map(function(robo3){
+        return robo3;
+    })
+    console.log(robo1);
+    // ['Green Egg']
+}
+
+console.log(nickToons[5].name);
+// Raymundo
+console.log(nickToons[5].homeTown);
+// Ocean Shores
+
+if (nickToons[5].homeTown === 'Ocean Shores'){
+    let rocketPower1 = nickToons.filter(function(rocketPower2){
+        return rocketPower2.homeTown === 'Ocean Shores';
+    }).map(function(rocketPower3){
+        return rocketPower3.name;
+    })
+    console.log(rocketPower1);
+    // ['Raymundo', 'Otto Rocket', 'Reggie Rocket']
+}
+
+
 
 
 
