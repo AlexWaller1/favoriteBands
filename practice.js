@@ -976,13 +976,60 @@ if (robots[3] == 'Eggplant-Head'){
         let firstNum = nums45[0];
         nums45.shift(firstNum);
         nums45.push(firstNum);
+        let joinNum = nums45.join('');
         console.log(nums45);
         // [2, 1]
         // [1, 2]
+        console.log(joinNum);
+        // 21
+        // 12
 
     }
 }
 
+if (robots[2] == 'Mellon-Tech'){
+    let input3 = 345;
+    input3 = input3.toString();
+    input3 = input3.split('');
+    console.log(input3);
+    for (let i = 0; i < 6; i++){
+        let firstNum = input3[0];
+        input3.shift(firstNum);
+        input3.push(firstNum);
+        let joinNum = input3.join('');
+        console.log(joinNum);
+        // 453
+        // 534
+        // 345
+        // 453
+        // 534
+        // 345
+        // not a bad idea but didn't quite work
+    }
+}
+
+console.log(robots);
+// ['Hank-44', 'Warren-21', 'Mellon-Tech', 'Eggplant-Head']
+
+console.log(robots.unshift('Green Egg'));
+console.log(robots);
+// ['Green Egg', 'Hank-44', 'Warren-21', 'Mellon-Tech', 'Eggplant-Head']
+let integer3 = [3, 4, 5];
+
+
+function factorial2(num1 = 3){
+    let count = 1;
+    for (let i = num1; i > 0; i--){
+        count = count * i;
+
+    }
+    return count;
+}
+
+console.log(factorial2());
+// 6
+console.log(factorial2(5));
+// 120
 
 
 
