@@ -1030,6 +1030,87 @@ console.log(factorial2());
 // 6
 console.log(factorial2(5));
 // 120
+console.log('---------------------------------------------');
+console.log('--------------------------------------------------');
+
+function digitCombinations(num1){
+    let factorial = factorial2(num1);
+    numString = num1.toString();
+    nums = numString.split('');
+    let rNum1 = 0, rNum2 = 0, rNum3 = 0;
+    let rNum4 = 0, rNum5 = 0, rNum6 = 0;
+    let newNums = [];
+    for (let i = 0; i < nums.length; i++){
+        if (i == 0){
+            rNum1 = nums[i] + nums[i + 1] + nums[i + 2];
+            rNum2 = nums[i] + nums[i + 2] + nums[i + 1];
+            newNums.push(rNum1, rNum2);
+        }
+        else if (i == 1){
+            rNum3 = nums[i] + nums[i + 1] + nums[i - 1];
+            rNum4 = nums[i] + nums[i - 1] + nums[i + 1];
+            newNums.push(rNum3, rNum4);
+            
+        }
+        else if (i == 2){
+            rNum5 = nums[i] + nums[i - 1] + nums[i - 2];
+            rNum6 = nums[i] + nums[i - 2] + nums[i - 1];
+            newNums.push(rNum5, rNum6);
+        }
+
+    }
+    for(let j = 0; j < newNums.length; j++){
+        let newNums2 = newNums[j];
+        newNums2 = parseInt(newNums2);
+        console.log(newNums2);
+    }
+    
+
+}
+
+digitCombinations(345);
+
+// 945
+// 594
+// 495
+// 954
+// 549
+// 459
+
+console.log('--------------------------------------------');
+console.log('---------------------------------------------------------');
+
+digitCombinations(142);
+// 142
+// 124
+// 421
+// 412
+// 241
+// 214
+console.log('-------------------------------------------------------------------');
+
+digitCombinations(987);
+// 987
+// 978
+// 879
+// 897
+// 789
+// 798
+
+
+
+console.log('------------------------------------------------------------------');
+console.log('---------------------------------------------------------------------------');
+
+robots.push('Bender', 'RoboCop');
+console.log(robots);
+// ['Green Egg', 'Hank-44', 'Warren-21', 'Mellon-Tech', 'Eggplant-Head', 
+// 'Bender', 'RoboCop']
+
+
+console.log(Math.random() * 10);
+
+console.log(robots[Math.floor(Math.random() * robots.length)]);
 
 
 
