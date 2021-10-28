@@ -782,7 +782,15 @@ longestCommonPrefix(timberTron);
 // Timber
 
 
-
+console.log(timberTron[0]);
+// Timber-Tron
+let testString = '';
+console.log(testString.concat('a'));
+// a
+console.log(timberTron[0].charAt(0) == timberTron[1].charAt(0));
+// true
+console.log(robots[2].charAt(robots[2].length - 1));
+// h
 
 
 
@@ -790,36 +798,38 @@ longestCommonPrefix(timberTron);
 const suffixWords = ['Wisconsinite', 'Kryptonite', 'prerequisite',
 'infinite', 'indefinite', 'opposite'];
 
-function longestCommonSuffix(suffixArr){
-    if (suffixArr.length == 0) console.log('Array is Empty');
-    let rString = 0;
+if (timberTron[0] == 'Timber-Tron'){
+    let suffix = suffixWords[0];
+    let index1 = suffix.length - 1;
+    let rString = '';
+    let i = 1;
+    for (; i < suffixWords.length; i++){
+        let fixString = suffixWords[i];
+        let index2 = fixString.length - 1;
+        while (suffix.charAt(index1--) == fixString.charAt(index2--)){
+               rString = rString.concat(suffix.charAt(index1--));
+               console.log(rString);
 
-    suffixArr[0] = suffixArr[0].split('');
-    suffixArr[0] = suffixArr[0].reverse();
-    suffixArr[0] = suffixArr[0].join('');
-    suffix = suffixArr[0];
-    console.log(suffix);
-    for (let i = 1; i < suffixArr.length; i++){
-        suffixArr[i] = suffixArr[i].split('');
-        suffixArr[i] = suffixArr[i].reverse();
-        suffixArr[i] = suffixArr[i].join('');
-        
-        
-        while (suffixArr[i].indexOf(suffix) != 0){
-            suffix = suffix.substring(0, suffix.length - 1);
-            if (suffix.length == 0) console.log('no common suffix')
+
         }
-        
-           suffix = suffix.split('');
-           console.log(suffix);
-           suffix = suffix.reverse();
-           suffix = suffix.join('');
-           rString = suffix;
     }
     console.log(rString);
+   
 }
 
-longestCommonSuffix(suffixWords);
+function reverseString(string1){
+    string1 = string1.split('');
+    string1 = string1.reverse();
+    string1 = string1.join('');
+    console.log(string1);
+}
+
+reverseString(robots[2]);
+// hceT-nolleM
+reverseString('robot');
+// tobor
+
+
 
 
 
