@@ -822,12 +822,33 @@ function reverseString(string1){
     string1 = string1.reverse();
     string1 = string1.join('');
     console.log(string1);
+    console.log(typeof(string1));
 }
 
 reverseString(robots[2]);
 // hceT-nolleM
 reverseString('robot');
 // tobor
+
+let batmanBeyond = 'Batman Beyond';
+console.log(typeof(batmanBeyond));
+// string
+batmanBeyond = batmanBeyond.split('');
+console.log(typeof(batmanBeyond));
+// object
+batmanBeyond = batmanBeyond.reverse();
+console.log(batmanBeyond);
+// ['d', 'n', 'o', 'y', 'e', 'B', ' ', 'n', 'a', 'm', 't', 'a', 'B']
+console.log(typeof(batmanBeyond));
+// object
+batmanBeyond = batmanBeyond.join('');
+console.log(batmanBeyond);
+// dnoyeB namtaB
+console.log(typeof(batmanBeyond));
+// string
+
+
+
 
 
 
